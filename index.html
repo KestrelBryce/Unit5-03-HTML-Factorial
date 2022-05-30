@@ -21,7 +21,7 @@
   </head>
 
     <!-- page title -->
-    <title>Number multiplication</title>
+    <title>Factorial calculator</title>
   </head>
   
 
@@ -32,7 +32,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Number multiplication</span>
+          <span class="mdl-layout-title">Factorial calculator</span>
         </div>
       </header>
     </div>
@@ -70,10 +70,11 @@
             class="mdl-textfield__input"
             type="number"
             step="1"
+            min="0"
             id="userNum-Here"
           />          
           <label class="mdl-textfield__label" for="userNum-Here">Numbers go here...</label>
-          <span class="mdl-textfield__error">Please insert a number with no decimals</span>
+          <span class="mdl-textfield__error">Please insert a positive number with no decimals</span>
         </div>
 
       <!-- page break -->
@@ -87,6 +88,10 @@
           <p>Check results</p>
         </button>
         <br />
+        
+      <!-- page break -->
+      <br></br>
+        
         <p>
           
           <div id="greeting">

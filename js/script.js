@@ -1,4 +1,4 @@
-  /* This function gets the user's two numbers and multiplies them togrther. 
+  /* This function gets the user's number and finds its factorial. 
 */
 
 function displayGreeting () {
@@ -9,34 +9,23 @@ function displayGreeting () {
   let counter = 1
 
   let factorial = 1
-
-  let finalFact = ""
+  
   
     // user input
   let userNum = parseInt((document.getElementById("userNum-Here").value));
+
   
     // loop code
     do  {
 
       factorial = factorial * counter
     
-      finalFact = finalFact + factorial + "<br>"
-    
       counter = counter + 1
       
     }  while  (counter <= userNum)
 
     // return string
-    document.getElementById("greeting").innerHTML = "hjihjni " + factorial
-        
+    document.getElementById("greeting").innerHTML = "You entered " + userNum + ". The factorial of " + userNum + " is " + factorial + "."
 
-
-
-  //document.getElementById("greeting").innerHTML = "hi"
   
 }
-//sum = sum + int2 + "<br>"
-
-    // add to the counter
-    //sum = sum + counter
-  //(let counter = 0;  counter <= int1;  counter++)
